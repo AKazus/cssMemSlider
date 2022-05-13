@@ -1,0 +1,47 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 1rem 10%;
+    background-color: rgb(59, 3, 112);
+}
+
+.slide-conteiner {
+    width: 90%;
+    margin: 2rem 5%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-conteiner img {
+    width: 100%;
+}
+
+.control-btns {
+    margin-left: 18rem;
+}
+
+.text-conteiner {
+    width: 60%;
+    height: 5rem;
+    font-size: 2rem;
+    margin: 1rem 2rem;
+    overflow: hidden;
+}
+
+.text-content {
+    width: 400%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.text-description {
+width: 100%;
+}
