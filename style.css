@@ -1,0 +1,157 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    background-color: rgb(63, 46, 80);
+    margin: 1rem 10%;
+
+}
+
+.slide-conteiner {
+    width: 90%;
+    height: 100%;
+    margin: 2rem 5%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    position: relative;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transition: left .5s ease-out;
+}
+
+.slide-conteiner img {
+    width: 25%;
+}
+
+.slide-btn {
+    display: none;
+}
+
+.control-btns {
+    margin-right: 5%;
+    color:blanchedalmond;
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    width: 1.4rem;
+    height: 1.4rem;
+    cursor: pointer;
+    background-color:rgb(63, 46, 80);
+    padding: .5rem;
+}
+
+.btn-circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: .2rem solid blanchedalmond;
+    background-color:blanchedalmond;
+    cursor: pointer;
+    transition: border .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+
+.text-conteiner {
+    width: 65%;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+.text-content {
+    width: 400%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    position: relative;
+    left: 0;
+    color:blanchedalmond;
+    transition: left .5s ease-out;
+}
+
+.text-description {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+#slide-1:checked ~ .slide-conteiner .slides, 
+#slide-1:checked ~ .text-conteiner .text-content {
+	left: 0;
+}
+
+#slide-2:checked ~ .slide-conteiner .slides, 
+#slide-2:checked ~ .text-conteiner .text-content {
+	left: -100%;
+}
+
+#slide-3:checked ~ .slide-conteiner .slides, 
+#slide-3:checked ~ .text-conteiner .text-content {
+	left: -200%;
+}
+
+#slide-4:checked ~ .slide-conteiner .slides, 
+#slide-4:checked ~ .text-conteiner .text-content{
+	left: -300%;
+}
+
+#slide-1:checked ~ .control-btns .btn-circle-1 .btn-circle{
+    background-color: rgb(63, 46, 80);
+}
+
+#slide-2:checked ~ .control-btns .btn-circle-2 .btn-circle{
+    background-color: rgb(63, 46, 80);
+}
+
+#slide-3:checked ~ .control-btns .btn-circle-3 .btn-circle{
+    background-color: rgb(63, 46, 80);
+}
+
+#slide-4:checked ~ .control-btns .btn-circle-4 .btn-circle{
+    background-color: rgb(63, 46, 80);
+}
+
+label:hover:not(:checked) .btn-circle{
+  border-color: rgb(250, 173, 58);
+  background-color: rgb(250, 173, 58);
+}
+
+label:active:not(:checked) .btn-circle {
+    border: .2rem solid rgba(248, 150, 3, .2);
+    background-color: rgba(248, 150, 3, .2);
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 12px;
+    }
+    .content-wrapper {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+
+    .text-conteiner {
+        width: 90%;
+        order:3;
+    }
+
+    .control-btns {
+        margin: 0 auto;
+    }
+
+  }
