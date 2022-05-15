@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 80%;
     background-color: rgb(63, 46, 80);
     margin: 1rem 10%;
@@ -36,10 +37,8 @@
     display: none;
 }
 
-
-
 .control-btns {
-    margin-left: 10rem;
+    margin-right: 5%;
     color:blanchedalmond;
     display: flex;
     flex-direction: row;
@@ -68,7 +67,8 @@ label {
 .text-conteiner {
     width: 65%;
     font-size: 2rem;
-    margin: 1rem 3rem;
+    margin-top: 1rem;
+    margin-left: 5%;
     overflow: hidden;
 }
 
@@ -133,3 +133,25 @@ label:active:not(:checked) .btn-circle {
     border: .2rem solid rgba(248, 150, 3, .2);
     background-color: rgba(248, 150, 3, .2);
 }
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 12px;
+    }
+    .content-wrapper {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+
+    .text-conteiner {
+        width: 90%;
+        order:3;
+    }
+
+    .control-btns {
+        margin: 0 auto;
+    }
+
+  }
