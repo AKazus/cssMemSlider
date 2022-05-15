@@ -6,7 +6,6 @@
     width: 80%;
     background-color: rgb(63, 46, 80);
     margin: 1rem 10%;
-
 }
 
 .slide-conteiner {
@@ -23,8 +22,6 @@
     margin: 0;
     padding: 0;
     position: relative;
-	left: 0;
-	top: 0;
 	z-index: 1;
 	transition: left .5s ease-out;
 }
@@ -62,7 +59,6 @@ label {
     transition: border .5s ease-out;
     transition: background-color .5s ease-out;
 }
-
 
 .text-conteiner {
     width: 65%;
@@ -138,12 +134,12 @@ label:active:not(:checked) .btn-circle {
     html {
         font-size: 12px;
     }
+    
     .content-wrapper {
         width: 100%;
         margin: 0;
         flex-direction: column;
     }
-
 
     .text-conteiner {
         width: 90%;
