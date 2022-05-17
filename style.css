@@ -132,7 +132,7 @@ label:active:not(:checked) .btn-circle {
 
 @media only screen and (max-width: 900px) {
     html {
-        font-size: 12px;
+        font-size: .8rem;
     }
     
     .content-wrapper {
